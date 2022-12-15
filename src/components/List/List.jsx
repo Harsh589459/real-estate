@@ -115,7 +115,7 @@ function List() {
                         .filter((item) => {
                             return (type == '' ? item : (item.type.includes(type)));
                         }).filter((item) => {
-                            return (search.toLowerCase() === '' ? item : item.hname.toLowerCase().includes(search))
+                            return (search.toLowerCase() === '' ? item : item.hname.toLowerCase().includes(search.toLowerCase()))
                         }).map(({ picture, hname, address, city, country, price, type, available, beds, bathrooms, area, id }) => (
                             <div className="card">
                                 <div className="row-1">
